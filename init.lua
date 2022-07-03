@@ -1,0 +1,6 @@
+require("options")
+require("plugins")
+require("plugins-config.lualine")
+require("plugins-config.gitsigns")
+require("plugins-config.lsp.lsp-config")
+require("plugins-config.lsp.cmp")
