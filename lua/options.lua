@@ -1,5 +1,5 @@
 local options = {
--- utf8
+	-- utf8
 	encoding = "UTF-8",
 	fileencoding = "utf-8",
 	-- 上下移动光标保留8行
@@ -57,9 +57,10 @@ local options = {
 	-- 自动补全不自动选中
 	completeopt = "menu,menuone,noselect,noinsert",
 	-- 样式
+	syntax = "enable",
 	background = "dark",
-	termguicolors = false,
-    	-- 不可见字符的显示，这里只把空格显示为一个点
+	termguicolors = true,
+    -- 不可见字符的显示，这里只把空格显示为一个点
 	list = false,
 	-- listchars = "space:·",
 	-- 补全增强
@@ -75,6 +76,19 @@ vim.opt.shortmess:append("c")
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
+
+
+-- Theme
+-- local colorscheme = "solarized"
+local colorscheme = "NeoSolarized"
+
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+  vim.notify("colorscheme: " .. colorscheme .. " 没有找到！")
+  return
+end
+-- Theme
+
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])

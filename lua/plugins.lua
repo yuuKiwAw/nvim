@@ -55,14 +55,39 @@ packer.startup({
 		use("saadparwaiz1/cmp_luasnip")
         use("L3MON4D3/LuaSnip")
 		use("rafamadriz/friendly-snippets")
-		
+
+		-- ==模糊查询==
+		use {
+			"nvim-telescope/telescope.nvim",
+			requires = {
+				"nvim-lua/plenary.nvim",
+				"BurntSushi/ripgrep", -- 文字查找
+				"sharkdp/fd", -- 文件查找
+			}
+		}
+
+
+		-- theme color icons about
+		use("altercation/vim-colors-solarized")
+		use("overcache/NeoSolarized")
+		use("kyazdani42/nvim-web-devicons")
+		use{
+			"nvim-treesitter/nvim-treesitter",
+			run = ":TSUpdate",
+			requires = {
+				"p00f/nvim-ts-rainbow", -- 彩虹括号
+			},
+		}
+
+		-- nvim-tree
+		use("kyazdani42/nvim-tree.lua")
 
 		-- lualine
 		use("nvim-lualine/lualine.nvim")
 
 		-- git
 		use {
-			'lewis6991/gitsigns.nvim',
+			"lewis6991/gitsigns.nvim",
 			config = function()
 			require('gitsigns').setup()
 			end
