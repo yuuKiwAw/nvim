@@ -68,8 +68,8 @@ packer.startup({
 
 
 		-- theme color icons about
-		use("altercation/vim-colors-solarized")
 		use("overcache/NeoSolarized")
+		use('mhartington/oceanic-next')
 		use("kyazdani42/nvim-web-devicons")
 		use{
 			"nvim-treesitter/nvim-treesitter",
@@ -92,6 +92,9 @@ packer.startup({
 			require('gitsigns').setup()
 			end
 		}
+
+		-- Indent Blankline
+        use("lukas-reineke/indent-blankline.nvim")
 
 
         -------------------------- plugins --------------------------

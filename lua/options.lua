@@ -62,7 +62,7 @@ local options = {
 	termguicolors = true,
     -- 不可见字符的显示，这里只把空格显示为一个点
 	list = false,
-	-- listchars = "space:·",
+	listchars = "space:·",
 	-- 补全增强
 	wildmenu = true,
 	-- pop up menu height
@@ -79,8 +79,8 @@ end
 
 
 -- Theme
--- local colorscheme = "solarized"
-local colorscheme = "NeoSolarized"
+-- local colorscheme = "NeoSolarized"
+local colorscheme = "OceanicNext"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
