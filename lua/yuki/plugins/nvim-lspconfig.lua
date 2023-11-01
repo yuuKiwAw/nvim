@@ -21,6 +21,12 @@ return ({
             end,
             ["clangd"] = function()
                 lspconfig.clangd.setup {}
+            end,
+            ["pyright"] = function ()
+                lspconfig.pyright.setup {}
+            end,
+            ["cmake"] = function ()
+                lspconfig.cmake.setup {}
             end
         })
 

@@ -43,7 +43,7 @@ opt.scrolloff = 8
 opt.sidescrolloff = 8
 
 -- colorscheme
-vim.cmd([[colorscheme habamax]])
+-- vim.cmd([[colorscheme habamax]])
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

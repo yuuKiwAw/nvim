@@ -4,9 +4,15 @@ return ({
     config = function()
         require("bufferline").setup({
             options = {
-                mode = 'buffers',
+                -- mode = 'buffers',
+                diagnostics = "nvim_lsp",
                 offsets = {
-                    { filetype = 'NvimTree' }
+                    {
+                        filetype = 'NvimTree',
+                        text = "File Explorer",
+                        highlight = "Directory",
+                        text_align = "left"
+                    }
                 },
             },
             highlights = {
@@ -19,5 +25,8 @@ return ({
                 },
             },
         })
+
+        vim.keymap.set("n", "<leader>h", ":BufferLineCyclePrev<CR>")
+        vim.keymap.set("n", "<leader>l", ":BufferLineCycleNext<CR>")
     end
 })

@@ -5,10 +5,10 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 --vsplit window
-keymap.set("n", "<leader>sv", "<C-w>v")
-keymap.set("n", "<leader>sh", "<C-w>s")
-keymap.set("n", "<leader>se", "<C-w>=")
-keymap.set("n", "<C-w>x", ":close<CR>")
+-- keymap.set("n", "<leader>sv", "<C-w>v")
+-- keymap.set("n", "<leader>sh", "<C-w>s")
+-- keymap.set("n", "<leader>se", "<C-w>=")
+-- keymap.set("n", "<C-w>x", ":close<CR>")
 
 -- tab keymap
 keymap.set("n", "<leader>to", ":tabnew<CR>")
