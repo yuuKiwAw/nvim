@@ -5,9 +5,16 @@ return ({
             ensure_installed = {
                 "c",
                 "cpp",
+                "cmake",
                 "lua",
                 "json",
                 "python",
+                "html",
+                "css",
+                "javascript",
+                "typescript",
+                "json",
+                "yaml",
             },
             highlight = {
                 enable = true,
