@@ -11,7 +11,8 @@ return ({
                 group_empty = true,
             },
             filters = {
-                dotfiles = false,
+                custom = { ".git" },
+                exclude = { ".gitignore" }
             },
         })
     end

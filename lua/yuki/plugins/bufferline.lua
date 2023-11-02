@@ -9,9 +9,9 @@ return ({
                 offsets = {
                     {
                         filetype = 'NvimTree',
-                        text = "File Explorer",
+                        text = "EXPLORER",
                         highlight = "Directory",
-                        text_align = "left"
+                        text_align = "center"
                     }
                 },
             },
