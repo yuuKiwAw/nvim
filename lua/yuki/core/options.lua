@@ -50,3 +50,6 @@ vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
+
+-- gui settings
+opt.guifont = "ComicShannsMono Nerd Font:h12"
