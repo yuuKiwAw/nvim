@@ -42,6 +42,6 @@ return ({
             },
         }
 
-        require('onedark').load()
+        -- require('onedark').load()
     end
 })
