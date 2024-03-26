@@ -5,10 +5,14 @@ opt.relativenumber = true
 opt.number = true
 
 -- tabs & indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "py",
+	command = "setlocal shiftwidth=4 tabstop=4"
+})
 
 -- line wrapping
 opt.wrap = false
