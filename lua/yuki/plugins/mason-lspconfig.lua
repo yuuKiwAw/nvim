@@ -8,6 +8,9 @@ return ({
                 "lua_ls",
                 "clangd",
                 "cmake",
+                "tsserver",
+                "html",
+                "tailwindcss",
             },
             automatic_installation = true,
         }
