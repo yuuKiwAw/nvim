@@ -11,6 +11,7 @@ return {
                 "tsserver",
                 "html",
                 "tailwindcss",
+                "pyright",
             },
             automatic_installation = true,
         })
