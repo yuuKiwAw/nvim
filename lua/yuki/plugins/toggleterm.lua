@@ -17,7 +17,7 @@ return ({
 
         require("toggleterm").setup({
             open_mapping = [[<c-\>]],
-            direction = "horizontal",
+            direction = "float",
             shade_terminals = true,
         })
     end

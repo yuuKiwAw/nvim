@@ -10,8 +10,10 @@ return {
                 "cmake",
                 "tsserver",
                 "html",
+                "cssls",
                 "tailwindcss",
                 "pyright",
+                "rust_analyzer",
             },
             automatic_installation = true,
         })
